@@ -15,7 +15,7 @@ import lombok.Data;
 public class UserModel {
 
     @Id
-    private String id;
+    private Long id; //númerico
 
     private String identification;
     private String name;
@@ -28,7 +28,7 @@ public class UserModel {
 
     
 
-    public UserModel(String id, String identification, String name, String address, String cellPhone, String email,
+    public UserModel(Long id, String identification, String name, String address, String cellPhone, String email,
             String password, String zone, String type) {
         this.id = id;
         this.identification = identification;
@@ -48,11 +48,11 @@ public class UserModel {
 
 
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

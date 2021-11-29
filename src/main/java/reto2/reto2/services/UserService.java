@@ -75,7 +75,7 @@ public class UserService {
      * @param user
      * @return
      */
-    public boolean eliminarUsuario(String user) {
+    public boolean eliminarUsuario(Long user) {
         try {
             userRepository.deleteById(user);
             return true;

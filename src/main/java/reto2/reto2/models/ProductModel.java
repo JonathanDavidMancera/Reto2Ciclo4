@@ -12,8 +12,8 @@ public class ProductModel {
     private String material;
     private String presentacion;
     private String description;
-    private int price;
     private boolean availability;
+    private double price; //double
     private int quantity;
     private String photography;
 
@@ -21,7 +21,7 @@ public class ProductModel {
     }
 
     public ProductModel(String reference, String brand, String category, String material, String presentacion,
-            String description, int price, boolean availability, int quantity, String photography) {
+            String description, double price, boolean availability, int quantity, String photography) {
         this.reference = reference;
         this.brand = brand;
         this.category = category;
@@ -82,11 +82,11 @@ public class ProductModel {
         this.description = description;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
